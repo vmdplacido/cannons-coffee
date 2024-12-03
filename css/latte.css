@@ -56,3 +56,6 @@ footer {
   background-color: var(--Catalina);
   max-width: 100%;
 }
+img {
+  max-width: 100%
+}
