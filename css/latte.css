@@ -64,3 +64,6 @@ footer {
   max-width: 100%;
   color: var(--white);
 }
+img {
+  max-width: 100%
+}
