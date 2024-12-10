@@ -18,7 +18,10 @@ body {
   line-height: 1.5;
   background-color: var(--Catalina);
 }
-
+.header{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:center;
 h1 {
   color: var(--white);
 }

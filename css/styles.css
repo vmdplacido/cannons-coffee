@@ -16,6 +16,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+img {
+  max-width: 100%;
+}
 header {
   display: flex;
   flex-flow: row wrap;
@@ -23,7 +26,7 @@ header {
 }
 body {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
 
   padding: 2rem;
   background-color: var(--Catalina);
@@ -31,14 +34,15 @@ body {
   font-size: 1.125rem;
   line-height: 1.5;
 }
+img {
+  width: 100%;
+}
+
 .mycontainer {
   max-width: 1200px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto;
 }
 h1 {
-  display: flex;
-  flex-flow: row wrap;
   margin: 0;
   font-size: 3rem;
   line-height: 1.1667;
@@ -80,7 +84,6 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  text-align: center;
 
   list-style-type: none;
   gap: 1rem;
@@ -113,10 +116,6 @@ a {
   text-align: center;
 }
 
-.content img {
-  max-width: 100%;
-  padding: 1rem;
-}
 .codebox {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -142,19 +141,17 @@ a {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
   background-color: var(--lightblue);
 }
 .card {
   display: grid;
 }
 footer {
-  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
   background-color: var(--Catalina);
 
-  display: flex;
-  flex-flow: row wrap;
   justify-content: center;
 }
 .footerlogo {
@@ -162,7 +159,32 @@ footer {
   color: var(--white);
 }
 
+#burger-button {
+  display: none;
+}
+
+@media (max-width: 384px) {
+  #burger-button {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+  svg {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+}
+
 @media (max-width: 650px) {
+  body {
+    padding: 0;
+  }
   .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -177,5 +199,19 @@ footer {
 @media (min-width: 1000px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 }
