@@ -34,9 +34,6 @@ body {
   font-size: 1.125rem;
   line-height: 1.5;
 }
-img {
-  width: 100%;
-}
 
 .mycontainer {
   max-width: 1200px;
@@ -65,8 +62,11 @@ h2 {
   margin: 0;
   padding: 0;
   border-top: solid var(--sunglow) 0.5rem;
-  background-color: var(--lightblue);
+
   border-bottom: solid var(--sunglow) 0.5rem;
+}
+.cards {
+  background-color: var(--lightblue);
 }
 
 h3 {
@@ -106,14 +106,14 @@ a {
 
   text-align: center;
 }
-.button h4 {
-  font-size: 0.65rem;
-}
+
 .button {
-  padding: 2px;
+  padding: 0.5rem;
   background-color: var(--Catalina);
   border-radius: 10px;
   text-align: center;
+  margin: 1rem auto;
+  font-size: 1rem;
 }
 
 .codebox {
@@ -140,7 +140,7 @@ a {
 .cards {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   background-color: var(--lightblue);
 }
@@ -153,8 +153,7 @@ footer {
   background-color: var(--Catalina);
 
   justify-content: center;
-}
-.footerlogo {
+
   font-size: 0.8rem;
   color: var(--white);
 }
